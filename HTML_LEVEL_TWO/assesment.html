@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Assesment Test HTML LEVEL TWO</title>
+	</head>
+	<body>
+		<h1>Course Sign Up Page</h1>
+		<p>Please Note: First Name, Last Name, Password, and Email are required</p>
+		<form method="get" action="extra_credit.html">
+			<p>
+			<label for="first_name">First Name:</label>
+			<input id="first_name" type="text"  placeholder="First Name" required>
+			<label for="last_name">Last Name:</label>
+			<input id="last_name" type="text"  placeholder="Last Name" required>
+			</p>
+			<p>
+			<label for="email_input">Email:</label>
+			<input id="email_input" type="email"  placeholder="user@domain.com" required>
+			<label for="password_input">Password:</label>
+			<input id="passwsord_input" type="password" required>
+			</p>
+			<p>Are you over the age of 18?</p>
+			<p>
+			<label for="radio_yes">Yes: </label>
+			<input id="radio_yes" type="radio" name="age" value="over_18">
+			<label for="radio_no">No: </label>
+			<input id="radio_no" type="radio" name="age" value="under_18">
+			</p>
+			<p>Do you have a credit card or paypal?</p>
+			<p>
+			<select name="payment_method">
+				<option value="cc">Credit Card</option>
+				<option value="pp">PayPal</option>
+			</select>
+			</p>
+			<p>
+			<!-- The assesment page had this button lsited as Submit Feedback but that didn't make sense -->
+			<input type="submit" name="submit_btn" value="Submit Info">
+		</form>
+	</body>
+</html>
+

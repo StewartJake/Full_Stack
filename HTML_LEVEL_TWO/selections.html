@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hotel Feedback</title>
+	</head>
+	<body>
+		<h1>Hotel Feedback Form</h1>
+		<form method="get">
+			<h2>Are you from inside the USA?</h2>
+			<!-- Giving the two radios the same name groups them.
+	   		Makes sense because just variable assignment-->
+			<p>
+			<label for="in_usa">Inside: </label>
+			<input id="in_usa" type="radio" name="loc" value="inside">
+			</p>
+			<p>
+			<label for="out_usa">Outside: </label>
+			<input id="out_usa" type="radio" name="loc" valur="outside">
+			</p>
+			<h2>How many stars would you give your service?</h2>
+			<select name="stars">
+				<option value="three">3</option>
+				<option value="two">2</option>
+				<option value="one">1</option>
+			</select>
+			<h2>Any other feedback?</h2>
+			<textarea name="feedback_text" rows="8" cols="80" placeholder="Feedback"></textarea>
+			<p>
+			<input type="submit" name="submit_btn" value="Submit">
+			</p>
+		</form>
+	</body>
+</html>
+
