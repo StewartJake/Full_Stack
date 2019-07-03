@@ -1,0 +1,34 @@
+h1{
+
+}
+
+#r11{
+	background-color: #0D1321;
+}
+#r12{
+	background-color: #1D2D44;
+}
+#r13{
+	background-color: #3E5C76;
+}
+#r14{
+	background-color: #738CAB;
+}
+#r15{
+	background-color: #F0EBD8;
+}
+td{
+	width:150px;
+	height:300px;
+	margin:100 px;
+	border: 5px solid white;
+}
+#spectrum_tbl{
+	margin:auto;
+}
+h2{
+	text-align: center;
+	margin:auto;
+	font-family: "Zilla Slab", serif;
+}
+
