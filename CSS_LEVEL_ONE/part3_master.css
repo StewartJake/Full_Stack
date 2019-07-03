@@ -1,0 +1,25 @@
+/* . for class */
+.first_div{
+	color:blue;
+}
+.second_div{
+	color:red;
+}
+/* # for id*/
+#singled_out{
+	color:green;
+	text-decorationi:line-through;
+}
+/* adjacent | a ul immediately after an h3 */
+h3 + ul{
+	border:4px dotted purple;
+}
+/* descendant | an anchor in a li */
+li a{
+	color:red;
+}
+li a[href="www.npr.org"]{
+	color:blue;
+	border:2px solid orange;
+}
+	
