@@ -1,0 +1,25 @@
+console.log("Problem 1:\n");
+console.log("True: " + sleepIn(false, false) + "\n");
+console.log("False: " + sleepIn(true, false) + "\n");
+console.log("True: " + sleepIn(false, true) + "\n");
+console.log("Problem 2:\n");
+console.log("True: " + monkeyTrouble(true, true) + "\n");
+console.log("True: " + monkeyTrouble(false, false) + "\n");
+console.log("False: " + monkeyTrouble(true, false) + "\n");
+console.log("Problem 3:\n");
+console.log("HiHi: " + stringTimes("Hi", 2) + "\n");
+console.log("HiHiHi: " + stringTimes("Hi", 3) + "\n");
+console.log("Hi: " + stringTimes("Hi", 1) + "\n");
+console.log("Problem 4:\n");
+console.log("6: " + luckySum(1, 2, 3) + "\n");
+console.log("3: " + luckySum(1, 2, 13) + "\n");
+console.log("1: " + luckySum(1, 13, 3) + "\n");
+console.log("Problem 5:\n");
+console.log("0: " + caught_speeding(60, false) + "\n");
+console.log("1: " + caught_speeding(65, false) + "\n");
+console.log("0: " + caught_speeding(65, true) + "\n");
+console.log("Bonus Problem:\n");
+console.log("True: " + makeBricks(3, 1, 8) + "\n");
+console.log("False: " + makeBricks(3, 1, 9) + "\n");
+console.log("True: " + makeBricks(3, 2, 10) + "\n");
+
