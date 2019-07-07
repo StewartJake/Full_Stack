@@ -51,11 +51,11 @@ print(arrayCheck([1,1,2,1,2,3]))
 # stringBits('Heeololeo') → 'Hello'
 
 def string_bits(str):
-    outStr = ""
+    out_str = ""
     for i in range(len(str)):
         if i%2 == 0:
-            outStr += str[i]
-    return outStr
+            out_str += str[i]
+    return out_str
 
 
 print("Hlo")
@@ -110,10 +110,19 @@ print(end_other("abc", "abXabc"))
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-#def doubleChar(str):
-  # CODE GOES HERE
+def double_char(str):
+    out_str  = ""
+    for char in str:
+        out_str += 2*char;
+    return out_str
 
 
+print("TThhee")
+print(double_char("The"))
+print("AAAAbbbb")
+print(double_char("AAbb"))
+print("HHii--TThheerree")
+print(double_char("Hi-There"))
 #####################
 ## -- PROBLEM 5 -- ##
 #####################
@@ -135,10 +144,22 @@ print(end_other("abc", "abXabc"))
 # no_teen_sum(2, 13, 1) → 3
 # no_teen_sum(2, 1, 14) → 3
 
-#def no_teen_sum(a, b, c):
-  # CODE GOES HERE
-#def fix_teen(n):
-  # CODE GOES HERE
+def no_teen_sum(a, b, c):
+    return fix_teen(a) + fix_teen(b) + fix_teen(c)
+    
+def fix_teen(n):
+    if (n not in range(13,20)
+            or (n == 15 or n == 16)):
+        return n
+    else:
+        return 0
+
+print('6')
+print(no_teen_sum(1, 2, 3))
+print('3')
+print(no_teen_sum(2, 13, 1))
+print('18')
+print(no_teen_sum(2, 1, 15))
 
 #####################
 ## -- PROBLEM 6 -- ##
@@ -152,5 +173,13 @@ print(end_other("abc", "abXabc"))
 # count_evens([2, 2, 0]) → 3
 # count_evens([1, 3, 5]) → 0
 
-#def count_evens(nums):
-  # CODE GOES HERE
+def count_evens(nums):
+    evens = list(filter(lambda x: x%2 == 0, nums))
+    return len(evens)
+
+print('3')
+print(count_evens([2, 1, 2, 3, 4]))
+print('3')
+print(count_evens([2, 2, 0]))
+print('0')
+print(count_evens([1, 3, 5]))
