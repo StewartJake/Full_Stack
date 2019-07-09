@@ -19,7 +19,7 @@ from django.conf.urls import include
 from AppTwo import views
 
 urlpatterns = [
-    path('',views.index,name='index'),
-    path('AppTwo', include('AppTwo.urls')),
+#    path('',views.index,name='index'),
+    path('', include('AppTwo.urls')),
     path('admin/', admin.site.urls),
 ]
