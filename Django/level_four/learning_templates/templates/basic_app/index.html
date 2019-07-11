@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load custom_tags %}
+  {% block body_block %}
+    <title>Wayward Son</title>
+    <h1>Welcome Home!</h1>
+    <h1> {{ text|cut:'hello' }} </h1>
+    <h1> {{ number|add:42 }}</h1>
+  {% endblock %}
