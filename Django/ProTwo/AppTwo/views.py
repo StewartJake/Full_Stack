@@ -24,6 +24,5 @@ def users(request):
             #        email=form.cleaned_data['email'],)
             # all could have been done:
             form.save(commit=True)
-            return index(request
-                    )
+#            return index(request)
     return render(request, 'AppTwo/usr.html', context=form_dict)
