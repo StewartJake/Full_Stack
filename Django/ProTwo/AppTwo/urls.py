@@ -6,3 +6,5 @@ urlpatterns = [
         path('signup/', views.users, name='signup'),
         ]
 
+
+app_name = 'AppTwo'
